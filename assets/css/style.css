@@ -1,0 +1,27 @@
+/* Custom Theme Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar specific tweaks */
+.navbar-nav .nav-link {
+    color: #555;
+    padding: 0.5rem 1rem !important;
+}
+
+.navbar-nav .nav-link.active {
+    color: #000 !important;
+}
+
+/* Custom form elements styling to match wireframe exactly */
+.form-control, .form-select, .btn {
+    border-radius: 0; /* Square edges as per wireframes */
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: none;
+    border-color: #000;
+}
