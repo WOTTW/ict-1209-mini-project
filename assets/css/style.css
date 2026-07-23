@@ -25,3 +25,15 @@ body {
     box-shadow: none;
     border-color: #000;
 }
+/* Category Card Animations */
+.category-card {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    background-color: #f8f9fa;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
