@@ -41,12 +41,64 @@
     </nav>
 
     <!-- Submit Recipe Section -->
-    <section class="container py-5 my-4" style="min-height: 50vh;">
+    <section class="container py-5 my-4">
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <h2 class="fw-bold mb-4 text-center">Submit Your Recipe</h2>
                 <p class="text-center text-muted mb-5">Share your amazing culinary creations with the RECIPE Mania community!</p>
-                <!-- Form will be added in the next commit -->
+
+                <div class="card rounded-0 border">
+                    <div class="card-body p-4 p-md-5">
+                        <form action="#" method="POST" id="submitRecipeForm">
+                            <!-- Recipe Title -->
+                            <div class="mb-4">
+                                <label for="recipeTitle" class="form-label fw-bold">Recipe Title</label>
+                                <input type="text" class="form-control rounded-0 p-2" id="recipeTitle" placeholder="e.g. Spicy Chicken Curry" required>
+                            </div>
+
+                            <div class="row mb-4">
+                                <!-- Category -->
+                                <div class="col-md-6 mb-4 mb-md-0">
+                                    <label for="category" class="form-label fw-bold">Category</label>
+                                    <select class="form-select rounded-0 p-2" id="category" required>
+                                        <option value="" selected disabled>Select category...</option>
+                                        <option value="Breakfast">Breakfast</option>
+                                        <option value="Lunch">Lunch</option>
+                                        <option value="Dinner">Dinner</option>
+                                        <option value="Desserts">Desserts</option>
+                                        <option value="Beverages">Beverages</option>
+                                    </select>
+                                </div>
+                                <!-- Cooking Time -->
+                                <div class="col-md-6">
+                                    <label for="prepTime" class="form-label fw-bold">Cooking Time (Minutes)</label>
+                                    <input type="number" class="form-control rounded-0 p-2" id="prepTime" placeholder="e.g. 45" required>
+                                </div>
+                            </div>
+
+                            <!-- Ingredients -->
+                            <div class="mb-4">
+                                <label for="ingredients" class="form-label fw-bold">Ingredients</label>
+                                <textarea class="form-control rounded-0 p-2" id="ingredients" rows="5" placeholder="List your ingredients here (one per line)..." required></textarea>
+                            </div>
+
+                            <!-- Instructions -->
+                            <div class="mb-4">
+                                <label for="instructions" class="form-label fw-bold">Step-by-Step Instructions</label>
+                                <textarea class="form-control rounded-0 p-2" id="instructions" rows="6" placeholder="Explain how to make it..." required></textarea>
+                            </div>
+
+                            <!-- Recipe Image -->
+                            <div class="mb-5">
+                                <label for="recipeImage" class="form-label fw-bold">Recipe Image</label>
+                                <input class="form-control rounded-0" type="file" id="recipeImage" accept="image/*">
+                                <div class="form-text">Upload a high-quality picture of your dish (Max 5MB).</div>
+                            </div>
+
+                            <button type="submit" class="btn btn-dark rounded-0 px-5 py-2 w-100 fs-5">Submit Recipe</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
